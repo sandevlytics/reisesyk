@@ -1,50 +1,180 @@
 * {
     box-sizing: border-box;
   }
+
+  body{
+    background: linear-gradient(to right,#4e8fac, #57b1cf, #407891);
+  }
+
   
   #myInput {
     background-image: url('/css/searchicon.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    text-align: center;
-    width: 20em;
+    width: 16em;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    font-size: 16px;
+    margin-top: 1.5em;
+    font-size: 18px;
     padding: 12px 20px 12px 40px;
-    border: 1px solid black;
-    margin-bottom: 12px;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 1.5em;
+    outline: none;
+
   }
+
   
   #myTable {
     border-collapse: collapse;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid black;
     font-size: 18px;
+    font-family: Verdana;
+    background-color: white;
   }
   
+ 
   #myTable th, #myTable td {
     text-align: left;
     padding: 12px;
+
   }
   
   #myTable tr {
     border-bottom: 1px solid black;
+    border-radius: 5%;
   }
   
-  #myTable tr.header, #myTable tr:hover {
-    background-color: #f1f1f1;
+  #myTable tr.header {
+    background-color: #df1f1f;
+    border-radius: 5%;
   }
 
+  tr{
+    border-radius: 5%;
+  }
+
+  tr:hover{
+    background: #e0e0e0;
+  }
+
+  th{
+    color: white;
+    font-size: 16px;
+  }
   h2{
-    text-align: center;
+   text-align: center;
 }
 
-  @media screen and (max-width: 600px){
-      .rekke2{
-       display: none;
-      }
-  }
+.skole{
+  font-size: 0.1px;
+  color: white;
+}
+
+.first{
+font-weight: 600;
+font-size: 1.3rem;
+text-align: center;
+font-family: 'raleway';
+}
+
+
+.frister{
+  text-align: left;
+  font-family: 'raleway';
+  font-size: 1rem;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 13em; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+  border-radius: 5px 5px 5px 5px;
+  width: 45%;
+  height: auto;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p{
+  text-align: center;
+}
+
+#myBtn{
+font-size: 18px;
+position: absolute;
+color: rgb(70, 67, 67);
+border: 1px solid white;
+border-radius: 5px 5px 5px 5px;
+background-color: white;
+outline: none;
+cursor: pointer;
+z-index: 1;
+top: 1.5em;
+right: 1.5rem;
+width: 4.6em;
+height: 1.2em;
+padding-top: 0.7em;
+padding-bottom: 1.8em;
+}
+
+
+ 
+
+
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+@import "path/to/font-awesome/less/font-awesome.less";
+body{font-family:'Montserrat',sans-serif}
+
+.menu{width:170px;margin:60px auto 0;cursor:pointer; position: absolute; top: -2em; left: 1.5em;}
+
+.title{width:100%;box-sizing:border-box;background:#fff;padding:14px;border-radius:4px; text-align: center; position:relative;box-shadow:0 0 40px -10px #000;color:#505050}
+
+span{float:left;font-size:18px!important}
+
+.dropdown{width:100%;background:#fff;border-radius:4px;box-shadow:0 0 40px -10px #000;color:#505050; outline: none; margin-top:24px;max-height:0;overflow:hidden;transition:all .5s}
+
+.down{max-height:150px}
+
+.arrow{border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:10px solid #fff;position:absolute;left:20px;bottom:-24px;display:none}
+
+.arrow.gone{display:block}
+
+p{padding:15px 14px; outline: none; margin:0;transition:all .1s}
+
+p:hover{background: #df1f1f ;-webkit-transform:scale(1.05); border-radius: 5px 5px 5px 5px; color:rgba(253, 253, 253, 0.8);box-shadow:0 0 30px -10px #000}
+  
