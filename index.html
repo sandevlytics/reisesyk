@@ -17,15 +17,15 @@
 
 <table id="myTable">
   <tr class="header">
-    <th style="width:30%;">Studie</th>
+    <th style="width:30%;">Studieprogram</th>
     <th style="width:25%;">Institusjon</th>
     <th style="width 15%;">2020/2021</th>
-    <th style="width 15%;">2019/2020</th>
-    <th style="width 15%;">2018/2019</th>
+    <th class="andretall" style="width 15%;">2019/2020</th>
+    <th class="tredjetall" style="width 15%;">2018/2019</th>
   </tr>
 
-  <button id="myBtn">Frister<span class="fa fa-exclamation"></span></button>
-    
+  <button id="myBtn">Viktige frister<span class="fa fa-calendar"></span></button>
+
     <div id="myModal" class="modal">
     
       <div class="modal-content">
@@ -40,12 +40,12 @@
     </div>
 
     <div class="menu">
-      <div class="title" onclick="f()">Opptak og lån<span class="fa fa-bars"></span>
+      <div class="title" onclick="f()"><div class="hei">Opptak og lån</div><span class="fa fa-bars"></span>
         <div class="arrow"></div>
       </div>
       <div class="dropdown">
-       <p>Samordna.no<span class="fa fa-graduation-cap"></span></p>
-        <p>Lånekassen.no<span class="fa fa-handshake-o"></span></p>
+       <p>Samordna<span class="fa fa-graduation-cap"></span></p>
+        <p>Lånekassen<span class="fa fa-handshake-o"></span></p>
       </div>
     </div>
 
@@ -96,688 +96,703 @@ function f() {
     <td>Siviløkonomutdanningen<div class="skole">NHH, handelshøyskolen Bergen</div></td>
     <td><a href="https://www.nhh.no/en/study-programmes/" target="_blank"><img style="width: 4em;" src="/Images/nhh.png" alt=""></a></td>
     <td>54.1 / 57.4</td>
-    <td>52.7 / 56.4</td>
-    <td class="rekke2">52.7 / 56.5</td>
+    <td class="andretall">52.7 / 56.4</td>
+    <td class="tredjetall">52.7 / 56.5</td>
+  </tr>
+  
+  <tr>
+    <td>Rettsvitenskap (Jus) <div class="skole">uio, universitetet i oslo</div></td>
+    <td><img style="width: 9em;" src="/images/uioo.png" alt=""></td>
+    <td>56.0 / 63.0</td>
+    <td class="andretall">54.8 / 62.2</td>
+    <td class="tredjetall">55.0 / 62.0</td>
+  </tr>
+  <tr>
+    <td>Rettsvitenskap (Jus, vår) <div class="skole">uio, universitetet i oslo</div></td>
+    <td><img style="width: 9em;" src="/images/uioo.png" alt=""></td>
+    <td>54.0 / 61.4</td>
+    <td class="andretall">53.2 / 60.8</td>
+    <td class="tredjetall">52.6 / 60.4</td>
   </tr>
   <tr>
     <td>Rettsvitenskap (Jus) <div class="skole">uio, universitetet i oslo</div></td>
-    <td><img style="width: 9em;" src="/images/uib.png" alt=""></td>
-    <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
-  </tr>
-  <tr>
-    <td>Rettsvitenskap (Jus) <div class="skole">uio, universitetet i oslo</div></td>
-    <td><img style="width: 10em;" src="/Images/uioo.png" alt=""></td>
-    <td>34.5 / 39.4</td>
-    <td>35.7 / 40.4</td>
-    <td class="rekke2">36.4 / 41.9</td>
+    <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
+    <td>55.0 / 60.8</td>
+    <td class="andretall">53.2 / 60.0</td>
+    <td class="tredjetall">52.8 / 59.2</td>
   </tr>
 
   <tr>
     <td>Sykepleie <div class="skole">oslomet</div></td>
     <td><img style="width: 8em;" src="/images/oslomet.jpg" alt="oslomet"></td>
-    <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td>44.8 / 49.4</td>
+    <td class="andretall">42.3 / 47.6</td>
+    <td class="tredjetall">42.1 / 48.1</td>
   </tr>
   <tr>
     <td>Medisin (Høst)<div class="skole">uio, universitetet i oslo</div></td>
     <td><img style="width: 9em;" src="/images/uioo.png" alt=""></td>
-    <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td>61.6 / 69.0</td>
+    <td class="andretall">60.7 / 68.5</td>
+    <td class="tredjetall">60.4 / 68.5</td>
+  </tr>
+  <tr>
+    <td>Medisin (Vår)<div class="skole">uio, universitetet i oslo</div></td>
+    <td><img style="width: 9em;" src="/images/uioo.png" alt=""></td>
+    <td>60.2 / 68.1</td>
+    <td class="andretall">59.1 / 67.5</td>
+    <td class="tredjetall">59.0 / 67.2</td>
   </tr>
   <tr>
     <td>Sykepleie <div class="skole">ntnu</div></td>
     <td><img style="width: 5em;" src="/images/ntnu.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Arkitekt <div class="skole">aho, Arkitekthøyskolen</div></td>
     <td><img style="width: 8em;" src="/images/aho.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Psykologi, profesjonsstudium <div class="skole">uit, universitetet i tromsø</div></td>
     <td><img style="width: 9em;" src="/images/uit.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
-    <td>Sykepleie, Høst <div class="skole">hvl, høyskolen på vestlandet</div></td>
+    <td>Sykepleie<div class="skole">hvl, høyskolen på vestlandet</div></td>
     <td><img style="width: 7em ;" src="/Images/vestlandet.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Kriminologi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Allmenn litteraturvitenskap (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Antikkens kultur (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Arkeologi og konservering</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Asia- og midtøsten-studier</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Barn og unges læring og utvikling</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Biovitenskap</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Elektronikk, informatikk og teknologi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Engelsk (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Estetiske studier og allmenn litteraturvitenskap</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Europeiske språk</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Farmasi (master -5 år)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Filosofi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Filosofi (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Filosofi, politikk og økonomi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Fransk (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Fysikk og astronomi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Geofysikk og klima</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Geologi og geografi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Helseledelse og helseøkonomi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Historie</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Historie (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Idehistorie</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Idehistorie (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Informatikk (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Informatikk: design, bruk og interaksjon</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Informatikk: digital økonomi og ledelse</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Informatikk: programmering og systemarkitektur</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Informatikk: robotikk og intelligente systemer</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Informatikk: språkteknologi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Internasjonale studier</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>IT-arkitektur</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Italiensk (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Kjemi og biokjemi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Klart språk</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Klassisk språk</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Klinisk ernæring (master - 5 år)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Kriminologi (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Kristendom og islam</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Kultur og kommunikasjon</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Kulturhistorie</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Kunsthistorie og visuelle studier</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Kunsthistorie og visuelle studier (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
 
   <tr>
     <td>Lektorprogrammet (master - 5 år)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Lingvistikk</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Lærevansker og særskilte behov i et system- og individperspektiv - påbygningsenhet (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Matematikk med informatikk</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Matematikk og økonomi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Materialvitenskap for energi- og nanoteknologi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Medier og kommunikasjon</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Medier og kommunikasjon (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Medisin (profesjon)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Musikkvitenskap</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Nordisk, særlig norsk, språk og litteratur (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Nordiske studier</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Norsk som andrespråk (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Odontologi (master - 5 år)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Offentlig administrasjon og ledelse</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Pedagogikk</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Praktisk-pedagogisk utdanning (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Praktisk-pedagogisk utdanning på deltid (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Praktisk-pedagogisk utdanning: Teact First Norway (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Psykologi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Psykologi (profesjon)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Psykologi (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Religion og samfunn</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Religionsvitenskap</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Russisk (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Samfunnsgeografi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Samfunnsøkonomi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Samfunnsøkonomi (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Samfunnsøkonomisk analyse (master - 5 år)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Sosiologi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Sosiologi (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Spansk (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Spesialpedagogikk</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Statsvitenskap</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Statsvitenskap (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Tannpleie</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Teologi</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Teologi (profesjon)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Teologi (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Tverrfaglige kjønnsstudier</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
  
@@ -785,1051 +800,1618 @@ function f() {
     <td>Tverrfaglige kjønnsstudier (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Tysk (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Utviklingsstudier</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Øst-Europa-studier (årsenhet)</td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Allmenn litteraturvitenskap (årsenhet) <div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Allmenn litteraturvitenskap<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Antikkens kultur og klassiske fag<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Arkeologi<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Arkitektur (master - 5 år) <div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Arkiv- og samlingsforvaltning <div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Audiologi (audiograf) <div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Automatisering og intelligente systemer <div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Barnevern (Barnevernpedagog) <div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Bevegelsesvitenskap<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Billedkunst <div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Bioingeniørfag (Trondheim)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Bioingeniørfag (Ålesund)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Biologi<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Biologi og kjemi (årsenhet)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Biomarin innovasjon (Ålesund)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Bioteknologi (Ålesund)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Bioteknologi (Master - 5 år) (Trondheim)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Byggingeniør deltid (Gjøvik)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Byggingeniør (Gjøvik)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Byggingeniør deltid (Ålesund)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Byggingeniør deltid (Trondheim)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Bygg- og miljøteknikk (Master - 5 år)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Bygningsinformasjonsmodellering - BIM<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Dataingeniør (Gjøvik)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Dataingeniør (Ålesund)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Dataingeniør (Trondheim)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Dateteknologi (Master - 5 år)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Digital forretningsutvikling<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Digital infrastruktur og cybersikkerhet (Gjøvik)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Digital infrastruktur og cybersikkerhet (Trondheim)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Drama og teater (årsenhet)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Elektrifisering og digitalisering<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Drama og teater<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Elektroingeniør<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Elektronisk systemdesign og innovasjon (Master - 5 år)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Energi og miljø (Master - 5 år)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Engelsk (årsenhet)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Engelsk<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Ergoterapi (Trondheim)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Ergoterapi (Gjøvik)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Engelsk<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Europastudier<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Film- og videoproduksjon<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Filmvitenskap (årsenhet)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Filmvitenskap<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Filosofi (årsenhet)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Filosofi<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Fornybar energi (Gjøvik)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Fornybar energi (Ålesund)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Fornybar energi (Trondheim)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Fransk (årsenhet)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Fransk<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Fransk med didaktikk (årsenhet)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Fremmedspråk<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Fysikk<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Fysikk og matematikk (Master - 5 år)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Fysioterapi<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Geografi (årsenhet)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Geografi<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Geologi<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Geomatikkingeniør (Gjøvik)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Grafisk design (Gjøvik)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Grunnskolelærerutdanning 1.-7.trinn (Master - 5 år)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Grunnskolelærerutdanning 5.-10.trinn (Master - 5 år)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Havbruksingeniør)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Historie<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Historie (årsenhet)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Humanistisk fag (årsenhet)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Industriell kjemi og bioteknologi (Master - 5 år)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Industriell økonomi og teknologiledelse (Master - 5 år)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Informasjonsbehandling<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Informatikk<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Ingeniørvitenskap og IKT (Master - 5 år)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Interaksjonsdesign (Gjøvik)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Kirkemusikk (årsenhet)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Kjemi<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Kjemiingeniør<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Klassiske fag<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Kommunikasjonsteknologi og digital sikkerhet (Master - 5 år)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Kompletterende utdanning i realfag og teknologi for flyktninger (årsenhet)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Kulturminneforvaltning<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Kunnskap, teknologi og samfunn (STS)<div class="skole">NTNU</div></td>
     <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
-    <td>Faglærer i kroppsøving og idrettsfag<div class="skole">nih, Norges idrettshøgskole</div></td>
-    <td><img style="width: 10em;" src="/images/nih.gif" alt=""></td>
+    <td>Kunsthistorie (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
-    <td>Trening, helse og prestasjon<div class="skole">nih, Norges idrettshøgskole</div></td>
-    <td><img style="width: 10em;" src="/images/nih.gif" alt=""></td>
+    <td>Kunsthistorie<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Kybernetikk og robotikk (master)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Latin (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Lektorutdanning i geografi<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Lektorutdanning i historie<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Lektorutdanning i kroppsøving og idrettsfag<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Lektorutdanning i realfag<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Lektorutdanning i samfunnsfag<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Lektorutdanning i språkfag<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Likestilling og mangfold (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Logistikkingeniør<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Logistikkledelse<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Marin teknikk<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Markedsføring, innovasjon og ledelse<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Maskiningeniør (deltid)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Maskiningeniør<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Matematiske fag (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Matematiske fag<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Materialteknologi<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Materialteknologi (master)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Matvitenskap, teknologi og bærekraft)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Medievitenskap (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Medievitenskap<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Medisinske og biologiske fag<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Musikkteknologi<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Musikkvitenskap<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Musikkvitenskap (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Nanoteknologi<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Nasjonal paramedic-utdanning<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Nautikk<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Nordisk og litteraturvitenskap<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Nordisk språk og litteratur (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Nordisk språk og litteratur<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Norsk som andrespråk<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Norsk tegnspråk<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Paramedisin<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Pedagogikk (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Pedagogikk<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Petroleumsfag<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Produktutvikling og produksjon<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Programmering<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Psykologi (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Psykologi<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Psykologi (profesjon)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Psykologi (profesjon 6 år)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Radiografi<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Religionsvitenskap (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Religionsvitenskap<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Rådgivning og voksnes læring<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Samfunns- og idrettsvitenskap<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Samfunnsøkonomi (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Samfunnsøkonomi<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Samfunnsøkonomi (5 år)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Shipping management<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Skipsdesign<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Sosialantropologi<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Sosialantropologi (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Sosialt arbeid (sosionom)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Sosiologi<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Sosiologi (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Spansk<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Spansk (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Statsvitenskap<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Statsvitenskap (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Sykepleie<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Tegnspråk (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Tekniske geofag<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Teknologidesign og ledelse<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Teknologidesign og ledelse (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Tradisjonelt bygghåndverk<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Tysk<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Tysk (årsenhet)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Vernepleie<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Webdesign<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Webutvikling<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Yrkesfaglærerutdanning<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Økonomi og administrasjon<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Økonomi og administrasjon (årsenhet, Gjøvik)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Økonomi og administrasjon (årsenhet, Trondheim)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Økonomi og administrasjon (deltid)<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Økonomi og ledelse<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
+  </tr>
+  <tr>
+    <td>Medisinsk og biologisk kjemi<div class="skole">NTNU</div></td>
+    <td><img style="width: 5em;" src="/images/ntnu-logo.jpg" alt=""></td>
+    <td>44.4 / 51.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Sport management / idrett og samfunn<div class="skole">nih, Norges idrettshøgskole</div></td>
     <td><img style="width: 10em;" src="/images/nih.gif" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Trenerrollen og idrettspsykologi<div class="skole">nih, Norges idrettshøgskole</div></td>
     <td><img style="width: 10em;" src="/images/nih.gif" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Idrett og samfunn<div class="skole">nih, Norges idrettshøgskole</div></td>
     <td><img style="width: 10em;" src="/images/nih.gif" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Friluftsliv<div class="skole">nih, Norges idrettshøgskole</div></td>
     <td><img style="width: 10em;" src="/images/nih.gif" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Sykepleie<div class="skole">ldh, Lovisenberg diakonale høgskole</div></td>
     <td><img style="width: 10em;" src="/images/lovisenberg.png.crdownload" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Ettårig grunnstudium<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Eiendom (master - 5 år)<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Frie realfag<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Bioteknologi<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Landskapsingeniør<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Husdyrvitenskap<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Skogfag<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Biologi<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Kjemi<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Økonomi og administrasjon<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Miljø og naturressurser<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Økologi og naturforvaltning<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Geomatikk (Bachelor)<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Samfunnsøkonomi<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Internasjonale miljø- og utviklingsstudier<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Dyrepleie<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Landskapsarkitektur<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Byggeteknikk og arkitektur<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Maskin-, prosess- og produktutvikling<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Industriell økonomi<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
  
   <tr>
     <td>Veterinærstudiet<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Kjemi og bioteknologi<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Miljøfysikk og fornybar energi<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Datavitenskap<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Vann- og miljøteknikk<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Geomatikk (Master)<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Fornybar energi<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Plantevitenskap<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Lektor, 8-13.trinn, realfag<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Energi- og miljøfysikk<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Matvitenskap og ernæring<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>By- og regionsplanlegging<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/images/nmbu.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Sykepleie<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Vernepleie<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Bedriftsøkonomi<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Idrett og adventure<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>IT, nettbasert<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>IT<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Statsvitenskap<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Jus<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Logistikk og Supply Chain Management<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Økonomi og administrasjon<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Marin logistikk og økonomi<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Sport Management<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Jus og administrasjon<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Petroleumslogistikk<div class="skole">him, høgskolen i molde</div></td>
     <td><img style="width: 9em;" src="/images/molde.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Barnehagelærer<div class="skole">Dronning Maud</div></td>
     <td><img style="width: 10em;" src="/images/maud.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   
   <tr>
     <td>Barnehagelærer: Musikk, drama, kunst og håndverk<div class="skole">Dronning Maud</div></td>
     <td><img style="width: 10em;" src="/images/maud.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   
   <tr>
     <td>Barnehagelærer: Natur- og friluftsliv<div class="skole">Dronning Maud</div></td>
     <td><img style="width: 10em;" src="/images/maud.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   
   <tr>
     <td>Barnehagelærer: Deltid<div class="skole">Dronning Maud</div></td>
     <td><img style="width: 10em;" src="/images/maud.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   
   <tr>
     <td>Barnehagelærer: Flerkulturell forståelse<div class="skole">Dronning Maud</div></td>
     <td><img style="width: 10em;" src="/images/maud.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Design<div class="skole">aho, Arkitekthøyskolen</div></td>
     <td><img style="width: 8em;" src="/images/aho.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
     <td>Landskapsarkitektur<div class="skole">aho, Arkitekthøyskolen</div></td>
     <td><img style="width: 8em;" src="/images/aho.png" alt=""></td>
     <td>44.4 / 51.7</td>
-    <td>41.2 / 49.7</td>
-    <td class="rekke2">38.4 / 44.7</td>
+    <td class="andretall">41.2 / 49.7</td>
+    <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   
  
