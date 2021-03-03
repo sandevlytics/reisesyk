@@ -83,7 +83,7 @@
   .menu-wrap .meny > div {
     background: var(--overlay-color);
     width: 200vw;
-    height: 200vw;
+    height: 300vw;
     display: flex;
     flex: none;
     align-items: center;
@@ -159,11 +159,13 @@
     justify-content: center;
   }
 
+  
+
   .lines{
-    margin-top: -8em;
+    margin-top: -10em;
   }
 
-  /*effect-underline*/
+  
   .underline:after {
     content: '';
     display: inline-block;
@@ -190,6 +192,7 @@
   }
   
   
+
 
 
  
