@@ -8,16 +8,34 @@
 <script src="/burger.js"></script>
 <script src="/sidepop.js"></script>
 <script src="/frister.js"></script>
+<link rel="stylesheet" href="burger.css">
 
 </head>
 <body>
 
- 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Søk..." title="Type in a name">
+<div class="overskrift">Sjekk snittet til ditt studie:</div>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Søk..." title="Tast inn ett studie">
+
+<div class="menu-wrap">
+  <input type="checkbox" class="toggler">
+  <div class="hamburger"><div></div></div>
+  <div class="meny">
+    <div>
+      <div>
+        <ul class="lines">
+          <li class="underline"><a class="line" href="index.html">Startside</a></li>
+          <li class="underline"><a class="line" href="https://www.samordnaopptak.no/info/" target="_blank">Samordnaopptak.no</a></li>
+          <li class="underline"><a class="line" href="https://www.lanekassen.no/" target="_blank">Lånekassen.no</a></li>
+          <li class="underline"><a class="line" href="https://www.sio.no/snarveier/om-sio/studentsamskipnadene-i-norge" target="_blank">Studentsamskipnadene</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 <table id="myTable">
   <tr class="header">
-    <th style="width:30%;">Studieprogram</th>
+    <th class="program" style="width:30%;">Studieprogram</th>
     <th style="width:25%;">Institusjon</th>
     <th style="width 15%;">2020/2021</th>
     <th class="andretall" style="width 15%;">2019/2020</th>
@@ -136,7 +154,7 @@ function f() {
     <td class="andretall">60.7 / 68.5</td>
     <td class="tredjetall">60.4 / 68.5</td>
   </tr>
-  <tr>
+  <tr> 
     <td>Medisin (Vår)<div class="skole">uio, universitetet i oslo</div></td>
     <td><img style="width: 9em;" src="/images/uioo.png" alt=""></td>
     <td>60.2 / 68.1</td>

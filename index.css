@@ -19,9 +19,35 @@
     padding: 12px 20px 12px 40px;
     border: 1px solid white;
     border-radius: 5px 5px 5px 5px;
-    margin-top: 2em;
-    margin-bottom: 1.5em;
+    margin-top: 1em;
+    margin-bottom: -1em;
     outline: none;
+  }
+
+  .overskrift{
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 2em;
+    position: relative;
+  }
+
+  .overskrift::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    bottom: -0.5em;
+    left: 40%; transform: translate(-50%);
+    background-color: rgb(253, 253, 253);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .overskrift:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
   }
 
   @media screen and (max-width: 800px){
@@ -104,7 +130,7 @@
   }
   
   #myTable tr.header {
-    background-color: rgb(245, 56, 56);
+    background-color: rgb(247, 64, 64);
     border: 0.8px solid rgb(10, 10, 10);
     border-radius: 5%;
   }
@@ -122,8 +148,9 @@
   }
 
   th{
-    color:white;
+    color:rgb(250, 250, 250);
     font-size: 16px;
+    filter: brightness(140%);
   }
 
   @media screen and (max-width: 775px){
@@ -152,8 +179,7 @@
 }
 
 .first{
-font-weight: 600;
-font-size: 1.3rem;
+font-size: 1.2rem;
 text-align: center;
 font-family: 'raleway';
 }
@@ -321,6 +347,19 @@ p{padding:15px 14px; outline: none; margin:0;transition:all .1s}
 p:hover{background:rgb(247, 46, 46); filter: brightness(140%); border: 0.5px solid black; -webkit-transform:scale(1.05); border-radius: 5px 5px 5px 5px; color:rgba(248, 249, 250, 0.8);box-shadow:0 0 30px -10px #000}
 
   
+@media screen and (max-width: 700px){
+  .title{
+    top: 0.5em;
+    width: 36px;
+    height: 2em;
+    box-shadow:0 0 40px -10px #000;
+  }
+}
+@media screen and (max-width: 1300px){
+  .menu{
+    display: none;
+  }
+}
 @media screen and (max-width: 700px){
   .title{
     top: 0.5em;
