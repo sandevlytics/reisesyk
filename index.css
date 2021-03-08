@@ -5,7 +5,6 @@
   body{
     background: linear-gradient(to right,#6eb7da, #4fa3be, #5faacc);
   }
-
   
   #myInput {
     background-position: 10px 10px;
@@ -112,6 +111,7 @@
 
     }
   }
+
   @media screen and (max-width: 475px){
     #myTable{
       width: 14em;

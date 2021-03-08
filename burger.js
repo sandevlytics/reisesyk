@@ -38,3 +38,4 @@ var Menu = {
   });
   
   Menu.init();
+
