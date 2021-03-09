@@ -76,7 +76,7 @@
     border: 1px solid black;
   }
 
-  @media screen and (max-width: 975px){
+  @media screen and (max-width: 1050px){
     #myTable{
       font-size: 14px;
       margin-top: 4em;
@@ -115,7 +115,7 @@
   @media screen and (max-width: 475px){
     #myTable{
       width: 14em;
-      font-size: 7.6px;
+      font-size: 7.3px;
     }
   }
   
@@ -194,7 +194,6 @@ font-family: 'raleway';
   text-align: left;
   font-family: 'raleway';
   font-size: 1rem;
-  cursor: pointer;
 }
 
 .modal {
@@ -264,6 +263,12 @@ p{
   text-align: center;
 }
 
+.kvote{
+  height: 10em;
+  margin-top: 2em;
+  margin-left: 1em;
+}
+
 #myBtn{
 font-size: 18px;
 position: absolute;
@@ -285,7 +290,7 @@ box-shadow:0 0 40px -10px #000;
 
 @media screen and (max-width: 700px){
   #myBtn{
-    top: 2em;
+    top: 1.2em;
     width: 36px;
     padding-bottom: 1.4em;
     padding-top: 0.4em;
@@ -303,7 +308,7 @@ box-shadow:0 0 40px -10px #000;
 .fa-calendar{
   float: right;
   position: relative;
-  padding-right: 2.5px;
+  padding-right:2.5px;
   padding-bottom: 0.3px;
 }
 
@@ -400,3 +405,107 @@ p:hover{background:rgb(247, 46, 46); filter: brightness(140%); border: 0.5px sol
   position: relative;
 }
 
+
+
+/*welcome-popup*/
+#modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+}
+
+.welcome-h1{
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 3em;
+}
+.welcome-h2{
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.modalPopup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 5px 5px 5px 5px;
+  min-width: 25%;
+  height: 40%;
+  padding: 0 0 30px;
+  -webkit-box-shadow: 0 2px 10px 3px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 2px 10px 3px rgba(0,0,0,.2);
+  box-shadow: 0 2px 10px 3px rgba(0,0,0,.2);
+}
+
+@media screen and (max-width: 700px){
+  .modalPopup{
+   width: 15em;
+   height: 15.5em;
+  }
+}
+@media screen and (max-width: 700px){
+  .kvote{
+   height: 8em;
+   margin-left: -0.7em;
+  }
+}
+
+
+.modalContent {padding: 0 2em;}
+.headerBar {
+width: 100%;
+background: white;
+margin: 0;
+text-align: center;
+}
+
+.headerBar img {
+margin: 1em .7em;
+}
+
+
+.welcome-p {margin: .75em 0 1.5em;}
+
+
+.buttonStyle {
+border: transparent;
+border-radius: 0;
+background: #29a818;
+color: #eee !important;
+cursor: pointer;
+border-radius: 5px 5px 5px 5px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 1.5em;
+display: block;
+font-weight: bold;
+font-size:14px;
+text-transform: uppercase;
+padding: 6px 25px;
+text-decoration: none;
+background: -moz-linear-gradient( #0e5c07 0%, #1e1e1e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d6d6d', endColorstr='#1e1e1e',GradientType=0 );
+
+}
+
+@media screen and (max-width: 700px){
+  .buttonStyle{
+   font-size: 12px;
+  }
+}
+
+.buttonStyle:hover {
+background: linear-gradient(to right,#13b12d, #1eb940, #28b424);
+color: #fff;
+background: -moz-linear-gradient(top, #1e1e1e 0%, #6d6d6d 100%, #6d6d6d 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#6d6d6d',GradientType=0 );
+}
+.returnToProfile {text-align: center; margin:3em;}
+.returnToProfile a, .returnToProfile a:visited {color: #ddd;}
+.returnToProfile a:hover {color: #fff;}

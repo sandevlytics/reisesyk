@@ -35,6 +35,7 @@
   /* Toggler Animation */
   .menu-wrap .toggler:checked + .hamburger > div {
     transform: rotate(135deg);
+    background: black;
   }
   
   /* Turns Lines Into X */
@@ -42,6 +43,7 @@
   .menu-wrap .toggler:checked + .hamburger > div:after {
     top: 0;
     transform: rotate(90deg);
+    background: black;
   }
   
   /* Rotate On Hover When Checked */
@@ -60,8 +62,7 @@
   }
 
   .meny{
-    background-image: url(./Images/ntnu-bygning.jpeg);
-    background-size: cover;
+    background-color: white ;
   }
   
   .menu-wrap .toggler:checked ~ .meny > div > div {
@@ -83,7 +84,7 @@
   }
   
   .menu-wrap .meny > div {
-    background: var(--overlay-color);
+    
     width: 200vw;
     height: 300vw;
     display: flex;
@@ -110,7 +111,6 @@
   
   .menu-wrap .meny > div > div > ul > li {
     list-style: none;
-    color: rgb(250, 249, 249);
     font-size: 1.5rem;
     padding: 1rem;
   }
@@ -124,7 +124,7 @@
   /* MENU STYLES */
   .menu-wrap {
     position: absolute;
-    top: 1em;
+    top: 0;
     left: 0;
     z-index: 2;
     box-shadow:0 0 40px -10px #000;
@@ -161,13 +161,17 @@
     justify-content: center;
   }
 
-  
+  .underline{
+    color: rgb(8, 8, 8);
+  }
+
+  .underline:hover{background:rgb(247, 46, 46); color: white; filter: brightness(140%); border: 0.5px solid black; -webkit-transform:scale(1.05); border-radius: 5px 5px 5px 5px; box-shadow:0 0 30px -10px #000}
 
   .lines{
     margin-top: -10em;
   }
 
-  
+  /*
   .underline:after {
     content: '';
     display: inline-block;
@@ -190,10 +194,15 @@
   }
   
   .underline{
-      margin: -1em
+      margin: -1em;
+
+  }
+
+  .underline:hover{
+    color: red;
   }
   
-  
+  */
 
 
 

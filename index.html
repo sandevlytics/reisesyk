@@ -16,8 +16,18 @@
 </head>
 <body>
 
+  <div id="modalOverlay">
+		<div class="modalPopup">
+			<div class="modalContent">
+           <img class="kvote" src="/Images/kvote2.png" alt="">
+					 <button class="buttonStyle" id="button">Jeg skjønner!</button>
+			</div>
+		</div>
+	</div>
+
 <div class="overskrift">Sjekk snittet til ditt studie:</div>
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Søk..." title="Tast inn ett studie">
+
 
 <div class="menu-wrap">
   <input type="checkbox" class="toggler">
@@ -26,22 +36,23 @@
     <div>
       <div>
         <ul class="lines">
-          <li class="underline"><a class="line" href="index.html"> 🏠 Startside</a></li>
-          <li class="underline"><a href="https://www.samordnaopptak.no/info/" target="_blank">🎓 Samordnaopptak.no</a></li>
-          <li class="underline"><a href="https://www.lanekassen.no/" target="_blank">💰 Lånekassen.no</a></li>
+          <li class="underline"><a href="index.html"> 🏠 Startside</a></li>
+          <li class="underline"><a href="https://www.samordnaopptak.no/info/">🎓 Samordna.no</a></li>
+          <li class="underline"><a href="https://www.lanekassen.no/">💰 Lånekassen.no</a></li>
         </ul>
       </div>
     </div>
   </div>
 </div>
 
+
 <table id="myTable">
   <tr class="header">
     <th class="program" style="width:30%;">Studieprogram</th>
     <th style="width:25%;">Institusjon</th>
-    <th style="width 15%;">2020/2021</th>
-    <th class="andretall" style="width 15%;">2019/2020</th>
-    <th class="tredjetall" style="width 15%;">2018/2019</th>
+    <th style="width 15%; text-align: center">2020</th>
+    <th class="andretall" style="width 15%; text-align: center">2019</th>
+    <th class="tredjetall" style="width 15%; text-align: center;">2018</th>
   </tr>
 
   <button id="myBtn">Viktige frister<span class="fa fa-calendar"></span></button>
@@ -64,14 +75,22 @@
         <div class="arrow"></div>
       </div>
       <div class="dropdown">
-       <a style="text-decoration: none; color: black;" target="_blank" href="https://www.samordnaopptak.no/info/"><p>Samordna<span class="fa fa-graduation-cap"></span></p></a>
-        <a style="text-decoration: none; color: black;" target="_blank" href="https://lanekassen.no/nb-NO/"><p>Lånekassen<span class="fa fa-handshake-o"></span></p></a>
+       <a style="text-decoration: none; color: black;" href="https://www.samordnaopptak.no/info/"><p>Samordna<span class="fa fa-graduation-cap"></span></p></a>
+        <a style="text-decoration: none; color: black;" href="https://lanekassen.no/nb-NO/"><p>Lånekassen<span class="fa fa-handshake-o"></span></p></a>
       </div>
     </div>
 
 
     <script>
 
+//JS welcome-popup
+window.onload = function() {
+  document.getElementById('button').onclick = function() {
+    document.getElementById('modalOverlay').style.display = 'none'
+  };
+};
+
+//JS frister
 // Get the modal
 var modal = document.getElementById("myModal");
     
@@ -185,7 +204,7 @@ function f() {
     <td class="tredjetall">47.6 / 53.5</td>
   </tr>
   <tr>
-    <td>Kriminologi<div class="skole">uio, oslo</div></td>
+    <td>Kriminologi<div class="skole">uio, oslo, universitetet i oslo</div></td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>53.0 / 58.0</td>
     <td class="andretall">51.4 / 55.6</td>
@@ -832,28 +851,28 @@ function f() {
     <td class="tredjetall">45.0 / 53.2</td>
   </tr>
   <tr>
-    <td>Samfunnsøkonomi<div class="skole">uio, oslo</div></td>
+    <td>Samfunnsøkonomi<div class="skole">uio, oslo, samføk</div></td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>49.0 / 58.2</td>
     <td class="andretall">46.7 / 54.1</td>
     <td class="tredjetall">46.9 / 53.4</td>
   </tr>
   <tr>
-    <td>Samfunnsøkonomi (årsenhet)<div class="skole">uio, oslo</div></td>
+    <td>Samfunnsøkonomi (årsenhet)<div class="skole">uio, oslo, samføk</div></td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>48.0 / 62.2</td>
     <td class="andretall">48.1 / 58.6</td>
     <td class="tredjetall">47.3 / 59.5</td>
   </tr>
   <tr>
-    <td>Samfunnsøkonomisk analyse (master - 5 år)<div class="skole">uio, oslo</div></td>
+    <td>Samfunnsøkonomisk analyse (master - 5 år)<div class="skole">uio, oslo, samføk</div></td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>42.5 / 54.5</td>
     <td class="andretall">Alle / 54.8</td>
     <td class="tredjetall">41.7 / 52.2</td>
   </tr>
   <tr>
-    <td>Sosialantropologi<div class="skole">uio, oslo</div></td>
+    <td>Sosialantropologi<div class="skole">uio, oslo, universitetetioslo</div></td>
     <td><img style="width: 8em;" src="/images/uioo.png" alt=""></td>
     <td>44.0 / 49.8</td>
     <td class="andretall">43.0 / 48.6</td>
@@ -2261,756 +2280,756 @@ function f() {
     <td class="tredjetall">38.4 / 44.7</td>
   </tr>
   <tr>
-    <td>Administrasjon og organisasjonsvitenskap (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Administrasjon og organisasjonsvitenskap (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>42.5 / 53.7</td>
     <td class="andretall">37.5 / 50.9</td>
     <td class="tredjetall">35.9 / 52.8</td>
   </tr>
   <tr>
-    <td>Administrasjon og organisasjonsvitenskap<div class="skole">uib, universitet i bergen</div></td>
+    <td>Administrasjon og organisasjonsvitenskap<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>40.4 / 44.3</td>
     <td class="andretall">37.5 / 41.2</td>
     <td class="tredjetall">36.4 / 44.4</td>
   </tr>
   <tr>
-    <td>Aktuarfag og datanalyse (Master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Aktuarfag og datanalyse (Master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Arabisk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Arabisk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Arbeids- og organisasjonspsykologi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Arbeids- og organisasjonspsykologi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>49.8 / 54.7</td>
     <td class="andretall">48.3 / 54.3</td>
     <td class="tredjetall">48.1 / 54.9</td>
   </tr>
   <tr>
-    <td>Arkeologi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Arkeologi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">30.4 / 40.7</td>
   </tr>
   <tr>
-    <td>Biologi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Biologi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>42.5 / 42.7</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">44.7 / 45.5</td>
   </tr>
   <tr>
-    <td>Digital kultur<div class="skole">uib, universitet i bergen</div></td>
+    <td>Digital kultur<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / 36.6</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / 36.5</td>
   </tr>
   <tr>
-    <td>Energi (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Energi (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>50.6 / 51.6</td>
     <td class="andretall">51.1 / 53.3</td>
     <td class="tredjetall">50.6 / 52.3</td>
   </tr>
   <tr>
-    <td>Engelsk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Engelsk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Engelsk (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Engelsk (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Europastudier<div class="skole">uib, universitet i bergen</div></td>
+    <td>Europastudier<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>35.7 / 36.2</td>
     <td class="andretall">Alle / 32.4</td>
     <td class="tredjetall">35.6 / 36.8</td>
   </tr>
   <tr>
-    <td>Farmasi (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Farmasi (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>52.3 / 55.6</td>
     <td class="andretall">53.5 / 57.3</td>
     <td class="tredjetall">53.0 / 59.5</td>
   </tr>
   <tr>
-    <td>Filosofi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Filosofi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Filosofi (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Filosofi (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Fiskehelse (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Fiskehelse (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>45.5 / 49.7</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">48.6 / 55.0</td>
   </tr>
   <tr>
-    <td>Fransk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Fransk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Fransk (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Fransk (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Fysikk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Fysikk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Generell psykologi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Generell psykologi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>51.1 / 56.4</td>
     <td class="andretall">49.7 / 54.7</td>
     <td class="tredjetall">49.5 / 53.8</td>
   </tr>
   <tr>
-    <td>Geografi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Geografi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>35.7 / 42.2</td>
     <td class="andretall">38.0 / 42.7</td>
     <td class="tredjetall">38.4 / 44.3</td>
   </tr>
   <tr>
-    <td>Geografi (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Geografi (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>37.9 / 53.0</td>
     <td class="andretall">Alle / 42.4</td>
     <td class="tredjetall">33.6 / 51.9</td>
   </tr>
   <tr>
-    <td>Geovitenskap, retning geofysikk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Geovitenskap, retning geofysikk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Geovitenskap, retning geologi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Geovitenskap, retning geologi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Havbruk og sjømat<div class="skole">uib, universitet i bergen</div></td>
+    <td>Havbruk og sjømat<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>42.4 / 49.2</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">46.5 / 50.1</td>
   </tr>
   <tr>
-    <td>Havteknologi (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Havteknologi (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>49.2 / 50.4</td>
     <td class="andretall">46.8 / 48.7</td>
     <td class="tredjetall">47.0 / 52.4</td>
   </tr>
   <tr>
-    <td>Historie (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Historie (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Historie<div class="skole">uib, universitet i bergen</div></td>
+    <td>Historie<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Human ernæring<div class="skole">uib, universitet i bergen</div></td>
+    <td>Human ernæring<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>41.3 / 52.5</td>
     <td class="andretall">48.6 / 51.3</td>
     <td class="tredjetall">46.8 / 50.7</td>
   </tr>
   <tr>
-    <td>Informasjonsteknologi og økonomi (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Informasjonsteknologi og økonomi (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Nytt fra 2021/2022</td>
     <td class="andretall">Nytt fra 2021/2022</td>
     <td class="tredjetall">Nytt fra 2021/2022</td>
   </tr>
   <tr>
-    <td>informasjonsvitenskap (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>informasjonsvitenskap (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>33.5 / 57.9</td>
     <td class="andretall">35.8 / 58.6</td>
     <td class="tredjetall">42.5 / 59.1</td>
   </tr>
   <tr>
-    <td>informasjonsvitenskap<div class="skole">uib, universitet i bergen</div></td>
+    <td>informasjonsvitenskap<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>39.7 / 51.8</td>
     <td class="andretall">38.1 / 49.7</td>
     <td class="tredjetall">38.1 / 46.9</td>
   </tr>
   <tr>
-    <td>Informatikk (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Informatikk (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>40.6 / 63.0</td>
     <td style="text-align: center;" class="andretall">N/A</td>
     <td style="text-align: center;" class="tredjetall">N/A</td>
   </tr>
   <tr>
-    <td>Informatikk-matematikk-økonomi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Informatikk-matematikk-økonomi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>43.9 / 51.1</td>
     <td class="andretall">37.7 / 44.6</td>
     <td class="tredjetall">40.5 / 41.2</td>
   </tr>
   <tr>
-    <td>Informatikk: bioinformatikk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Informatikk: bioinformatikk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Informatikk: data science<div class="skole">uib, universitet i bergen</div></td>
+    <td>Informatikk: data science<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>39.0 / 45.2</td>
     <td class="andretall">Alle / 43.3</td>
     <td class="tredjetall">Alle / 52.3</td>
   </tr>
   <tr>
-    <td>Informatikk: datasikkerhet<div class="skole">uib, universitet i bergen</div></td>
+    <td>Informatikk: datasikkerhet<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / 41.7</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Informatikk: datateknologi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Informatikk: datateknologi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>38.2 / 44.1</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Italiensk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Italiensk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Japansk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Japansk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>32.6 / 45.6</td>
     <td class="andretall">36.7 / 45.9</td>
     <td class="tredjetall">36.8 / 47.6</td>
   </tr>
   <tr>
-    <td>Journalistikk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Journalistikk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>53.0 / 56.0</td>
     <td class="andretall">51.1 / 55.4</td>
     <td class="tredjetall">50.5 / 55.1</td>
   </tr>
   <tr>
-    <td>Kinesisk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Kinesisk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">32.1 / 44.2</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Kjemi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Kjemi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Kjønn, seksualitet og mangfold (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Kjønn, seksualitet og mangfold (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Kjønnsstudier<div class="skole">uib, universitet i bergen</div></td>
+    <td>Kjønnsstudier<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Klassisk filologi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Klassisk filologi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Klima-, atmosfære- og havfysikk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Klima-, atmosfære- og havfysikk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Kulturvitenskap<div class="skole">uib, universitet i bergen</div></td>
+    <td>Kulturvitenskap<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Kunsthistorie (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Kunsthistorie (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Kunsthistorie<div class="skole">uib, universitet i bergen</div></td>
+    <td>Kunsthistorie<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Kognitiv vitenskap<div class="skole">uib, universitet i bergen</div></td>
+    <td>Kognitiv vitenskap<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>51.3 / 55.0</td>
     <td class="andretall">49.8 / 53.6</td>
     <td class="tredjetall">47.8 / 53.1</td>
   </tr>
   <tr>
-    <td>Kunstig intelligens<div class="skole">uib, universitet i bergen</div></td>
+    <td>Kunstig intelligens<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Nytt fra 2021/2022</td>
     <td class="andretall">Nytt fra 2021/2022</td>
     <td class="tredjetall">Nytt fra 2021/2022</td>
   </tr>
   <tr>
-    <td>Lektor, 8-13.trinn, engelsk (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Lektor, 8-13.trinn, engelsk (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>50.5 / 51.6</td>
     <td class="andretall">49.3 / 53.1</td>
     <td class="tredjetall">49.6 / 52.9</td>
   </tr>
   <tr>
-    <td>Lektor, 8-13.trinn, fransk (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Lektor, 8-13.trinn, fransk (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Lektor, 8-13.trinn, historie (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Lektor, 8-13.trinn, historie (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>50.2 / 53.5</td>
     <td class="andretall">49.4 / 55.3</td>
     <td class="tredjetall">50.3 / 54.7</td>
   </tr>
   <tr>
-    <td>Lektor, 8-13.trinn, natur/matte (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Lektor, 8-13.trinn, natur/matte (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">50.2 / 50.5</td>
   </tr>
   <tr>
-    <td>Lektor, 8-13.trinn, nordisk (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Lektor, 8-13.trinn, nordisk (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Lektor, 8-13.trinn, spansk (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Lektor, 8-13.trinn, spansk (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td style="text-align: center;" class="tredjetall">N/A</td>
   </tr>
   <tr>
-    <td>Lektor, 8-13.trinn, tysk (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Lektor, 8-13.trinn, tysk (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Lektor, 8-13.trinn, religionsvitenskap (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Lektor, 8-13.trinn, religionsvitenskap (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>43.5 / 42.5</td>
     <td class="andretall">45.5 / 46.8</td>
     <td class="tredjetall">45.0 / 45.8</td>
   </tr>
   <tr>
-    <td>Lektor, 8-13.trinn, sosiologi (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Lektor, 8-13.trinn, sosiologi (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Nytt fra 2021/2022</td>
     <td class="andretall">Nytt fra 2021/2022</td>
     <td class="tredjetall">Nytt fra 2021/2022</td>
   </tr>
   <tr>
-    <td>Litteraturvitenskap<div class="skole">uib, universitet i bergen</div></td>
+    <td>Litteraturvitenskap<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Matematikk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Matematikk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Matematikk for industri og teknologi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Matematikk for industri og teknologi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Medie- og interaksjonsdesign <div class="skole">uib, universitet i bergen</div></td>
+    <td>Medie- og interaksjonsdesign <div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>47.8 / 54.0</td>
     <td class="andretall">46.9 / 52.1</td>
     <td class="tredjetall">45.0 / 51.3</td>
   </tr>
   <tr>
-    <td>Medier og kommunikasjon (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Medier og kommunikasjon (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>44.8 / 54.6</td>
     <td class="andretall">39.7 / 51.2</td>
     <td class="tredjetall">35.5 / 49.2</td>
   </tr>
   <tr>
-    <td>Medier og kommunikasjon<div class="skole">uib, universitet i bergen</div></td>
+    <td>Medier og kommunikasjon<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>42.9 / 47.6</td>
     <td class="andretall">40.7 / 45.3</td>
     <td class="tredjetall">37.2 / 41.3</td>
   </tr>
   <tr>
-    <td>Medisin (profesjon)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Medisin (profesjon)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>60.0 / 67.7</td>
     <td class="andretall">59.2 / 67.0</td>
     <td class="tredjetall">59.0 / 66.6</td>
   </tr>
   <tr>
-    <td>Medisinsk teknologi (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Medisinsk teknologi (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>55.5 / 58.1</td>
     <td class="andretall">54.8 / 58.7</td>
     <td class="tredjetall">56.1 / 61.1</td>
   </tr>
   <tr>
-    <td>Molekylærbiologi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Molekylærbiologi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>48.0 / 49.2</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">51.3 / 49.6</td>
   </tr>
   <tr>
-    <td>Musikkterapi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Musikkterapi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">44.5 / 49.0</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Musikkvitenskap<div class="skole">uib, universitet i bergen</div></td>
+    <td>Musikkvitenskap<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>44.0 / 46.3</td>
     <td class="andretall">39.0 / 45.5</td>
     <td class="tredjetall">42.0 / 49.2</td>
   </tr>
   <tr>
-    <td>Nanoteknologi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Nanoteknologi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Naturvitenskapelige fag (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Naturvitenskapelige fag (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Nordisk (årsenhet)<iv class="skole">uib, universitet i bergen</div></td>
+    <td>Nordisk (årsenhet)<iv class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Nordisk språk og litteratur<div class="skole">uib, universitet i bergen</div></td>
+    <td>Nordisk språk og litteratur<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Norrøn filologi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Norrøn filologi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Norsk som andrespråk (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Norsk som andrespråk (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Norsk som andrespråk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Norsk som andrespråk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Odontologi (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Odontologi (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>57.5 / 65.4</td>
     <td class="andretall">56.4 / 65.3</td>
     <td class="tredjetall">56.5 / 64.5</td>
   </tr>
   <tr>
-    <td>Pedagogikk (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Pedagogikk (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>44.8 / 56.5</td>
     <td class="andretall">41.4 / 52.4</td>
     <td class="tredjetall">36.4 / 50.7</td>
   </tr>
   <tr>
-    <td>Pedagogikk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Pedagogikk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>41.5 / 47.9</td>
     <td class="andretall">38.8 / 46.0</td>
     <td class="tredjetall">40.8 / 46.8</td>
   </tr>
   <tr>
-    <td>Psykologi (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Psykologi (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>49.0 / 52.5</td>
     <td class="andretall">47.1 / 51.0</td>
     <td class="tredjetall">46.2 / 50.6</td>
   </tr>
   <tr>
-    <td>Psykologi (profesjon)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Psykologi (profesjon)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>56.7 / 64.5</td>
     <td class="andretall">55.7 / 64.2</td>
     <td class="tredjetall">55.3 / 63.5</td>
   </tr>
   <tr>
-    <td>Religionsvitenskap<div class="skole">uib, universitet i bergen</div></td>
+    <td>Religionsvitenskap<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Religionsvitenskap (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Religionsvitenskap (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Retorikk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Retorikk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Russisk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Russisk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Rettsvitenskap (jus)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Rettsvitenskap (jus)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>55.0 / 60.8</td>
     <td class="andretall">53.2 / 60.0</td>
     <td class="tredjetall">52.8 / 59.2</td>
   </tr>
   <tr>
-    <td>Samfunnsøkonomi (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Samfunnsøkonomi (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>57.5 / 65.4</td>
     <td class="andretall">56.4 / 65.3</td>
     <td class="tredjetall">56.5 / 64.5</td>
   </tr>
   <tr>
-    <td>Samfunnsøkonomi (bachelor)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Samfunnsøkonomi (bachelor)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>45.5 / 47.9</td>
     <td class="andretall">43.6 / 45.0</td>
     <td class="tredjetall">43.4 / 47.3</td>
   </tr>
   <tr>
-    <td>Samfunnsøkonomi (master)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Samfunnsøkonomi (master)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>48.7 / 51.8</td>
     <td class="andretall">44.1 / 47.9</td>
     <td class="tredjetall">42.4 / 45.9</td>
   </tr>
   <tr>
-    <td>Sammenliknende politikk (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Sammenliknende politikk (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>46.5 / 52.2</td>
     <td class="andretall">40.2 / 50.6</td>
     <td class="tredjetall">42.2 / 54.2</td>
   </tr>
   <tr>
-    <td>Sammenliknende politikk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Sammenliknende politikk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>41.0 / 41.0</td>
     <td class="andretall">40.0 / 40.3</td>
     <td class="tredjetall">40.0 / 42.2</td>
   </tr>
   <tr>
-    <td>Sosialantropologi (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Sosialantropologi (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>45.3 / 51.5</td>
     <td class="andretall">41.7 / 48.9</td>
     <td class="tredjetall">43.3 / 48.6</td>
   </tr>
   <tr>
-    <td>Sosialantropologi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Sosialantropologi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>38.2 / 40.4</td>
     <td class="andretall">36.8 / 39.4</td>
     <td class="tredjetall">35.8 / 39.8</td>
   </tr>
   <tr>
-    <td>Sosiologi (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Sosiologi (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>47.6 / 52.0</td>
     <td class="andretall">45.2 / 52.6</td>
     <td class="tredjetall">45.8 / 51.9</td>
   </tr>
   <tr>
-    <td>Sosiologi<div class="skole">uib, universitet i bergen</div></td>
+    <td>Sosiologi<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>41.7 / 43.4</td>
     <td class="andretall">40.1 / 42.3</td>
     <td class="tredjetall">38.8 / 42.3</td>
   </tr>
   <tr>
-    <td>Spansk språk og latinamerikastudier (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Spansk språk og latinamerikastudier (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Spansk språk og latinamerikastudier<div class="skole">uib, universitet i bergen</div></td>
+    <td>Spansk språk og latinamerikastudier<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Spesialpedagogikk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Spesialpedagogikk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>45.0 / 49.4</td>
     <td class="andretall">45.0 / 51.8</td>
     <td class="tredjetall">45.8 / 51.7</td>
   </tr>
   <tr>
-    <td>Språkvitenskap<div class="skole">uib, universitet i bergen</div></td>
+    <td>Språkvitenskap<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Statistikk og data science<div class="skole">uib, universitet i bergen</div></td>
+    <td>Statistikk og data science<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Tannpleie<div class="skole">uib, universitet i bergen</div></td>
+    <td>Tannpleie<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>42.6 / 48.4</td>
     <td class="andretall">42.1 / 47.7</td>
     <td class="tredjetall">42.9 / 49.0</td>
   </tr>
   <tr>
-    <td>Teatervitenskap<div class="skole">uib, universitet i bergen</div></td>
+    <td>Teatervitenskap<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>TV-produksjon<div class="skole">uib, universitet i bergen</div></td>
+    <td>TV-produksjon<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>48.8 / 54.8</td>
     <td class="andretall">50.0 / 53.5</td>
     <td class="tredjetall">48.0 / 52.2</td>
   </tr>
   <tr>
-    <td>Tysk (årsenhet)<div class="skole">uib, universitet i bergen</div></td>
+    <td>Tysk (årsenhet)<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
     <td class="tredjetall">Alle / Alle</td>
   </tr>
   <tr>
-    <td>Tysk<div class="skole">uib, universitet i bergen</div></td>
+    <td>Tysk<div class="skole">uib, universitetet i bergen</div></td>
     <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
     <td>Alle / Alle</td>
     <td class="andretall">Alle / Alle</td>
