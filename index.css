@@ -271,6 +271,7 @@ font-family: 'raleway';
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px 5px 5px 5px;
   width: 40%;
+  margin-top: -6em;
   height: auto;
   letter-spacing: 1px;
   font-size: 1.2rem;
