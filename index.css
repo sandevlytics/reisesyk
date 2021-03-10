@@ -348,11 +348,13 @@ box-shadow:0 0 40px -10px #000;
   #myBtn{
     position: absolute;
     top: 1.2em;
-    right: 2em;
+    right: 1em;
     width: 36px;
     height: 1.2em;
     font: 1px;
     padding-bottom: 1.4em;
+    background-color: transparent;
+    border: 1px solid white;
     padding-top: 0.4em;
     box-shadow:0 0 40px -10px #000;
   }
@@ -370,7 +372,8 @@ box-shadow:0 0 40px -10px #000;
     position: absolute;
     top: 1.5em;
     right: 0.33em;
-    color: black;
+    color: rgb(255, 255, 255);
+    filter: brightness(140%);
   }
 }
 
