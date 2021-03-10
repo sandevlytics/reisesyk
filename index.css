@@ -354,7 +354,7 @@ box-shadow:0 0 40px -10px #000;
     font: 1px;
     padding-bottom: 1.4em;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid transparent;
     padding-top: 0.4em;
     box-shadow:0 0 40px -10px #000;
   }
