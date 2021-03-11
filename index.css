@@ -345,9 +345,6 @@ box-shadow:0 0 40px -10px #000;
     z-index: 1;
     top: 1.5em;
     right: 1.5rem;
-    width: 42px;
-    height: 42px;
-    box-shadow:0 0 40px -10px #000;
     background-color: transparent;
   }
 }
