@@ -355,15 +355,13 @@ box-shadow:0 0 40px -10px #000;
 
 @media screen and (max-width: 700px){
   .fa-calendar{
-    top: 0.5em;
-    margin-right: 0.33em;
     color: rgb(255, 255, 255);
     filter: brightness(140%);
   }
 }
 
 .fa-calendar{
-  margin-right: 0.5em;
+  margin-top: 0.6em;
 }
 
 @media screen and (max-width: 620px){
