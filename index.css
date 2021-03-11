@@ -286,6 +286,7 @@ font-family: 'raleway';
 @media screen and (max-width: 460px){
   .modal-content{
     min-width: 16em;
+    margin-top: -3em;
   }
 }
 @media screen and (max-width: 360px){
@@ -350,7 +351,6 @@ box-shadow:0 0 40px -10px #000;
 }
 
 .fa-calendar{
-  margin-left: 0.33em;
 }
 
 @media screen and (max-width: 620px){
