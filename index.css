@@ -361,7 +361,9 @@ box-shadow:0 0 40px -10px #000;
 }
 
 .fa-calendar{
-  margin-top: 0.6em;
+  position: absolute;
+  top: 1.7em;
+  right: 1.7em;
 }
 
 @media screen and (max-width: 620px){
