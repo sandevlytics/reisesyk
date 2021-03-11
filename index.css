@@ -187,12 +187,7 @@
   }
   
   #myTable tr.header {
-    background-color: rgb(247, 64, 64);
-    border: 2px solid rgb(10, 10, 10);
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-style: hidden; 
-    box-shadow: 0.5px 0px 1px 2.2px rgb(247, 64, 64);
+    
   }
 
   tr{
@@ -349,8 +344,8 @@ box-shadow:0 0 40px -10px #000;
     position: absolute;
     top: 1.2em;
     right: 1em;
-    width: 000.1px;
-    height: 0.0000px;
+    width: 36px;
+    height: 1.2em;
     font: 1px;
     padding-bottom: 1.4em;
     background-color: transparent;
@@ -361,6 +356,7 @@ box-shadow:0 0 40px -10px #000;
 }
 .viktig{
   margin-right: 1em;
+  font-size: 0.9em;
 }
 @media screen and (max-width: 700px){
   .viktig{
