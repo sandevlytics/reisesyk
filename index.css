@@ -320,7 +320,6 @@ p{
 }
 
 #myBtn{
-font-size: 18px;
 position: absolute;
 color: rgb(70, 67, 67);
 border: 1px solid white;
@@ -339,24 +338,24 @@ box-shadow:0 0 40px -10px #000;
 @media screen and (max-width: 700px){
   #myBtn{
     position: absolute;
-    top: 1.2em;
-    right: 1em;
-    width: 36px;
-    height: 1.2em;
-    font: 1px;
-    padding-bottom: 1.4em;
-    background-color: transparent;
+    color: rgb(70, 67, 67);
+    border-radius: 5px 5px 5px 5px;
     border: 1px solid transparent;
-    padding-top: 0.4em;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+    top: 1.5em;
+    right: 1.5rem;
+    width: 42px;
+    height: 42px;
     box-shadow:0 0 40px -10px #000;
+    background-color: transparent;
   }
 }
 
 @media screen and (max-width: 700px){
   .fa-calendar{
-    position: absolute;
     top: 1.5em;
-    right: 0.33em;
     color: rgb(255, 255, 255);
     filter: brightness(140%);
   }
