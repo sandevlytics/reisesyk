@@ -355,8 +355,9 @@ box-shadow:0 0 40px -10px #000;
   }
 }
 .viktig{
-  margin-right: 1em;
+  margin-right: em;
   font-size: 0.9em;
+  margin-left: -1em;
 }
 @media screen and (max-width: 700px){
   .viktig{
