@@ -286,7 +286,7 @@ font-family: 'raleway';
 @media screen and (max-width: 460px){
   .modal-content{
     min-width: 16em;
-    margin-top: -3em;
+    margin-top: -5.5em;
   }
 }
 @media screen and (max-width: 360px){
@@ -338,6 +338,7 @@ box-shadow:0 0 40px -10px #000;
 
 @media screen and (max-width: 700px){
   #myBtn{
+    position: absolute;
     color: rgb(247, 241, 241);
     border-radius: 5px 5px 5px 5px;
     border: 1px solid transparent;
@@ -351,6 +352,9 @@ box-shadow:0 0 40px -10px #000;
 }
 
 .fa-calendar{
+  position: absolute;
+  top: 0.65em;
+  right: 0.65em;
 }
 
 @media screen and (max-width: 620px){
