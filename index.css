@@ -346,8 +346,8 @@ box-shadow:0 0 40px -10px #000;
     z-index: 1;
     top: 1.5em;
     right: 1.5rem;
-    width: 42px;
-    height: 42px;
+    width: 0.000px;
+    height: 0.000px;
     box-shadow:0 0 40px -10px #000;
     background-color: transparent;
   }
@@ -363,7 +363,7 @@ box-shadow:0 0 40px -10px #000;
 .fa-calendar{
   position: absolute;
   top: 1.7em;
-  right: 1.7em;
+  right: 2.1em;
 }
 
 @media screen and (max-width: 620px){
