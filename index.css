@@ -553,9 +553,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', end
 
 
 .pop{
-  font-weight: 900;
+  font-weight: 900 !important;
   font-size: 8px !important;
-  margin-top: -1.2em;
+  margin-top: -1.2em !important ;
   padding-bottom: 0.5em;
   color: rgb(19, 150, 41) !important;
 
