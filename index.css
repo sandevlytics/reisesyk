@@ -613,3 +613,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', end
   from {opacity: 0;}
   to {opacity:1 ;}
 }
+
+.undertekst{
+  text-align: center;
+  font-weight: 200;
+  color: rgb(129, 126, 126);
+  font-size: 1.1rem;
+}
