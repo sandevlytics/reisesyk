@@ -399,7 +399,7 @@ span{float:left;font-size:18px!important}
 
 p{padding:15px 14px; outline: none; margin:0;transition:all .1s}
 
-p:hover{background:rgb(247, 46, 46); filter: brightness(140%); border: 0.5px solid black; -webkit-transform:scale(1.05); border-radius: 5px 5px 5px 5px; color:rgba(248, 249, 250, 0.8);box-shadow:0 0 30px -10px #000}
+p:hover{background:rgb(247, 46, 46); filter: brightness(140%);  -webkit-transform:scale(1.05); border-radius: 5px 5px 5px 5px; color:rgba(248, 249, 250, 0.8);box-shadow:0 0 30px -10px #000}
 
   
 @media screen and (max-width: 700px){
@@ -617,7 +617,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', end
 .undertekst{
   text-align: center;
   font-weight: 200;
-  color: rgb(129, 126, 126);
+  color: rgb(253, 253, 253);
   font-size: 1.1rem;
   margin-right: 2.5em;
 }

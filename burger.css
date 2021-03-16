@@ -35,7 +35,7 @@
   /* Toggler Animation */
   .menu-wrap .toggler:checked + .hamburger > div {
     transform: rotate(135deg);
-    background: black;
+    background: white;
   }
   
   /* Turns Lines Into X */
@@ -43,7 +43,7 @@
   .menu-wrap .toggler:checked + .hamburger > div:after {
     top: 0;
     transform: rotate(90deg);
-    background: black;
+    background: white;
   }
   
   /* Rotate On Hover When Checked */
@@ -62,7 +62,7 @@
   }
 
   .meny{
-    background-color: white ;
+    background: linear-gradient(to right,#6eb7da, #4fa3be, #5faacc);
   }
   
   .menu-wrap .toggler:checked ~ .meny > div > div {
@@ -162,12 +162,13 @@
   }
 
   .underline{
-    color: rgb(8, 8, 8);
+    color: rgb(250, 248, 248);
+    filter: brightness(140%);
     margin-left: -2em;
     font-weight: 400;
   }
 
-  .underline:hover{background:rgb(247, 46, 46); color: white; filter: brightness(140%); border: 0.5px solid black; -webkit-transform:scale(1.05); border-radius: 5px 5px 5px 5px; box-shadow:0 0 30px -10px #000}
+  .underline:hover{background:rgb(247, 46, 46); color: white; filter: brightness(140%); -webkit-transform:scale(1.05); border-radius: 5px 5px 5px 5px; box-shadow:0 0 30px -10px #000}
 
   .lines{
     margin-top: -2em;
