@@ -28,7 +28,7 @@
 		</div>
 	</div>
 
-<div class="overskrift">Sjekk snittet til ditt studie:</div>
+<div class="overskrift">Sjekk snittet til ditt studium:</div>
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Søk..." title="Tast inn ett studie">
 
 
@@ -90,6 +90,12 @@
 
     <script>
 
+        // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
 //JS welcome-popup
 window.onload = function() {
   document.getElementById('button').onclick = function() {
@@ -139,30 +145,29 @@ function f() {
 
     </script>
 
-
   <tr>
-    <td><div style="font-size: 8px;" class="pop"></div>Siviløkonomutdanningen<div class="skole">NHH, handelshøyskolen Bergen, økad</div></td>
-    <td><img style="width: 4em;" src="/Images/nhh.png" alt=""></td>
+    <td><a href="https://www.nhh.no/studier/soknad-og-opptak/opptak-bachelor-i-okonomi-og-administrasjon/" style="text-decoration: none; color: black;"><div style="font-size: 8px;" class="pop"></div>Siviløkonomutdanningen<div class="skole">NHH, handelshøyskolen Bergen, økad</div></a></td>
+    <td><a href="https://www.nhh.no/studier/soknad-og-opptak/opptak-bachelor-i-okonomi-og-administrasjon/"><img style="width: 4em;" src="/Images/nhh.png" alt=""></a></td>
     <td>54.1 / 57.4</td>
     <td class="andretall">52.7 / 56.4</td>
     <td class="tredjetall">52.7 / 56.5</td>
   </tr>
   <tr>
-    <td><div class="pop"></div> Rettsvitenskap (jus)<div class="skole">uib, universitetet i bergen, jus bergen, juss bergen, jus uib</div></td>
-    <td><img style="width: 10em;" src="/Images/uib.png" alt=""></td>
+    <td><a href="https://www.uib.no/studier/MAJUR" style="text-decoration: none; color: black;"><div class="pop"></div> Rettsvitenskap (jus)<div class="skole">uib, universitetet i bergen, jus bergen, juss bergen, jus uib</div></a></td>
+    <td><a href="https://www.uib.no/studier/MAJUR"><img style="width: 10em;" src="/Images/uib.png" alt=""></a></td>
     <td>55.0 / 60.8</td>
     <td class="andretall">53.2 / 60.0</td>
     <td class="tredjetall">52.8 / 59.2</td>
   </tr>
    <t> 
-    <td><div class="pop"></div> Rettsvitenskap, Høst (Jus)<div class="skole">uio, universitetet i oslo, jus oslo, juss oslo</div></td>
-    <td><img style="width: 9em;" src="/Images/uioo.png" alt=""></td>
+    <td><a href="https://www.jus.uio.no/" style="text-decoration: none; color: black;"><div class="pop"></div> Rettsvitenskap, Høst (Jus)<div class="skole">uio, universitetet i oslo, jus oslo, juss oslo</div></a></td>
+    <td><a href="https://www.jus.uio.no/"><img style="width: 9em;" src="/Images/uioo.png" alt=""></a></td>
     <td>56.0 / 63.0</td>
-    <td class="andretall">54.8 / 62.2</td>
+    <td class="andretall"> 54.8 / 62.2</td>
     <td class="tredjetall">55.0 / 62.0</td>
   </tr>
   <tr>
-    <td><div class="pop"></div>Sykepleie <div class="skole">oslomet, sykepleie oslomet</div></td>
+    <td> <div class="popup" onclick="myFunction()"> Sykepleie <span class="popuptext" id="myPopup">Fagkrav</span></div> <div class="skole">oslomet, sykepleie oslomet</div></td>
     <td><img style="width: 9em;" src="/Images/oslomet.jpg" alt=""></td>
     <td>44.8 / 49.4</td>
     <td class="andretall">42.3 / 47.6</td>
@@ -3624,7 +3629,7 @@ function f() {
   </tr>
  
   <tr>
-    <td>Industriell økonomi<div class="skole">nmbu</div></td>
+    <td>Industriell økonomi - teknologi (Master - 5 år)<div class="skole">nmbu</div></td>
     <td><img style="width: 10em;" src="/Images/nmbu.png" alt=""></td>
     <td>54.4 / 60.0</td>
     <td class="andretall">54.9 / 58.2</td>
@@ -6069,7 +6074,7 @@ function f() {
     <td class="tredjetall">47.7 / 49.8</td>
   </tr>
   <tr>
-    <td>Industriell økonomi og teknologiledelse (Grimstad)<div class="skole">uia, universitetet i Agder</div></td>
+    <td>Industriell økonomi og teknologiledelse, master - 5 år (Grimstad)<div class="skole">uia, universitetet i Agder</div></td>
     <td><img style="width: 8em ;" src="/Images/uia.png" alt=""></td>
     <td>44.3 / 48.7</td>
     <td class="andretall">46.0 / 52.0</td>
@@ -6545,7 +6550,7 @@ function f() {
     <td class="tredjetall">40.0 / 42.8</td>
   </tr>
   <tr>
-    <td>Industriell økonomi<div class="skole">uis, universitet i stavanger</div></td>
+    <td>Industriell økonomi (Master - 5 år)<div class="skole">uis, universitet i stavanger</div></td>
     <td><img style="width: 6em;" src="/Images/stavanger.png" alt=""></td>
     <td>39.0 / 53.7</td>
     <td class="andretall">43.0 / 51.1</td>
